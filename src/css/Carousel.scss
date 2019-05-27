@@ -1,0 +1,58 @@
+
+@import "vars";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+  height: 320px;
+}
+
+.carousel {
+  position: relative;
+  height: 270px;
+  width: 480px;
+}
+
+.carousel__dotNavbar {
+  position: relative;
+  top: 270px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel__dotNavbar__dot {
+  height: 24px;
+  width: 24px;
+  background-color: $light;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel__dotNavbar__dot_active {
+  background-color: $dark;
+}
+
+.carousel__arrow_left {
+  position: relative;
+  top: 120px;
+  right: 30px;
+  cursor: pointer;
+  color: $dark;
+}
+
+.carousel__arrow_right {
+  position: relative;
+  top: 120px;
+  left: 30px;
+  cursor: pointer;
+  color: $dark;
+}
+
+.invisible {
+  visibility: hidden;
+}

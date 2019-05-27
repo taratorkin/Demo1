@@ -1,0 +1,36 @@
+
+@import 'vars';
+
+.sidebar {
+  background-color: $light;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  position: fixed;
+  overflow: hidden;
+  width: 200px;
+  height: calc(100% - 60px);
+  a {
+    color: white;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    width: 100%;
+    height: inherit;
+    height: 50px;
+    background-color: $light;
+    transition: 0.5s;
+  }
+  li:hover {
+    background-color: $dark;
+    transition: 0.5s;
+  }
+}
+
+.sidebar:hover {
+  overflow: auto;
+}
